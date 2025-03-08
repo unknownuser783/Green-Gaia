@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Gaia</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Fonts -->
+</head>
+<body>
+    <header>
+        <h1>Green Gaia</h1>  <a href="index.html"><img src="gaia.png" alt="logo" width="400" height="300"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reserve.html">Reservations</a></li>
+                <li><a href="resources.html">Reference Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section" id="menu">
+        <div class="content">
+            <h2>Our Menu</h2>
+            <p>Below you can find both our Monday through Friday dinner menu and our Weekend Brunch menu. While we strive to satisfy our customers, please understand that everything is freshly prepared from fresh sources and items may be unavailable at times.</p>
+            <p> As an establishment, Green Gaia does not offer a kids menu and instead offers two portion sizes for most of the available menu.</p>
+            <p> <b> We are here for you.</b>  Food and seating modifications are always free and we will do our best to provide them.</p>
+        </div>
+    </div>
+
+    <!-- TABBED MENU -->
+    <div class="menutabs">
+        <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
+        <button class="tablinks" onclick="openMenu(event, 'Brunch')">Brunch</button>
+        <button class="tablinks" onclick="openMenu(event, 'Dinner')">Dinner</button>
+    </div>
+
+    <!--  MENU CONTENT -->
+
+
+    <div id="Drinks" class="tabcontent">
+        <h2>Drinks</h2>
+    
+        <h3 class="type">  <b>Iced Drinks </b></h3>
+        <p><b>Ice Water</b> - Free</p>
+        <p><b>Unsweetened Tea</b> - $1.99 </p>
+        <p><b> Sparkling Water</b> -  $1.99 </p>
+    
+
+
+        <h3 class="type">  <b>Mocktails</b></h3>
+        <p><b>Virgin Pina Colada</b> - $4.99</p>
+        <p><b>Shirley Temple</b> - $4.99</p>
+        <p><b>Strawberry Sparkling Mocktail</b> - $4.99</p>
+        <p><b>Pomegranate Ginger Sparkler</b> - $4.99</p>
+
+
+        <h3 class="type">  <b>Specialty Drinks</b></h3>
+        <p><b>Hot Teas</b> - $0.99</p>
+        <p> Ask your server about this weeks hot teas and specialty drinks!</p>
+   
+    
+
+        
+       
+    </div>
+
+   
+    
+    
+
+    <div id="Brunch" class="tabcontent">
+        <h2>Brunch</h2>
+
+        <p class= "menu schedule"><b>Sat-Sun | 7:30AM - 12:30PM</b></p>
+    
+        <h3 class="type">  <b>Main Courses </b></h3>
+        <p><b>Eggs n' Toast</b> - Whole: $6.99 | Half: $4.49</p>
+        <p><b>Banana Pancakes</b> - Whole: $8.99 | Half: $5.49</p>
+        <p><b> Hearty n' Healthy Breakfast Bowl</b> - $9.99 | Half : $6.49</p>
+        <p><b>Omelette</b> - $10.99 </p>
+
+        
+        <h3 class="type">  <b>Sides and bakery items </b></h3>
+        <p><b>Greek Yogurt Parfait</b> - $6.49</p>
+        <p><b>Chia Seed Pudding</b> - $5.99</p>
+        <p><b>Fresh Fruit </b> - $3.99</p>
+        <p><b>Weekly Pastry</b> *Ask your server for more details*</p>
+        
+        
+
+    </div>
+    
+    
+    <div id="Dinner" class="tabcontent">
+        <h2>Dinner</h2>
+
+        <p class= "menu schedule"><b>Mon-Fri | 3:30 - 10:30PM</b></p>
+    
+        <h3 class="type">  <b>Soups </b></h3>
+        <p><b>Tomato</b> - Cup: $5.99 | Bowl: $7.49</p>
+        <p><b>Potato</b> - Cup: $5.99 | Bowl: $7.49</p>
+        <p><b>Lentil</b> - Cup: $5.99 | Bowl: $7.49</p>
+
+
+
+        
+        <h3 class="type">  <b>Salads</b></h3>
+        <p><b>Greek Salad</b> - Small: $4.99 | Large: $6.99</p>
+        <p><b>Caesar Salad</b> - Small: $4.99 | Large: $6.99</p>
+        <p><b>Spinach n' Strawberry Salad</b> - Small: $4.99 | Large: $6.99</p>
+        <p><b>Quinoa Salad</b> - Small: $4.99 | Large: $6.99</p>
+
+
+    <h3 class="type">  <b>Sides</b></h3>
+        <p><b>Baked Sweet Potato</b> - $3.99</p>
+        <p><b>Baked Sweet Potato Fries with Sea Salt</b> - Small: $3.99 | Large: $4.99</p>
+        <p><b>Garlic Roasted Brussels Sprouts</b> - Small: $3.99 | Large: $4.99</p>
+        <p><b>Steamed Veggie Meadly</b> - Small: $3.99 | Large: $4.99</p>
+
+        <h3 class="type">  <b>Main Courses</b></h3>
+        <p><b> Green Goddess Sandwich</b> - Whole: $7.99 | Half: $5.49</p>
+        <p><b>Chickpea Salad Sandwich</b> - Whole: $7.99 | Half: $5.49</p>
+        <p><b>Grilled Cheese Sandwich</b> - Small: $4.99 | Large: $6.99</p>
+        <p><b>Black Bean Burger</b> - Whole: $7.99 | Half: $5.49</p>
+        <p><b>Black Bean Dino Nuggets</b> - 8 count: $7.99 | 4 count: $5.49</p>
+        <p><b>Cheese quessidilla</b> - Whole: $5.99 | Half: $3.49</p>
+        <p><b>Rainbow Veggie Wraps</b> - $2.99 Per wrap</p>
+        <p><b>Tofu n' Veggie Scramble</b> - $10.99</p>
+
+        <h3 class="type">  <b>Desserts</b></h3>
+        <p><b>Baked Apples with Cinnamon</b> - Small: $4.99 | Large: $6.99</p>
+        <p><b>Fruit Salad</b> - Small: $4.99 | Large: $6.99</p>
+        <p><b>Weekly Special</b> *Ask your server for more details*</p>
+
+
+
+        
+    </div>
+
+    
+
+    <footer>
+        <p>Green Gaia | 98736 Something Street, Somewhere, Some State 410424</p>
+        <p>&copy; 2025 Green Gaia. All rights reserved.</p>
+    </footer>
+
+    <!-- FUNCTIONALITY FOR MENU TABS -->
+    <script>
+        function openMenu(evt, menuName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Start page with the first tab already opened
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".tablinks").click();
+        });
+    </script>
+</body>
+</html>

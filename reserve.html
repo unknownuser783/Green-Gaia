@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green Gaia</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    </head>
+<body>
+    
+    <header>
+        <h1>Green Gaia</h1>  <a href="index.html"><img src="gaia.png" alt="logo" width="400" height="300"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reserve.html">Reservations</a></li>
+                <li><a href="resources.html">Reference Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section" id="reserveinfo">
+        <div class="content">
+            <h2>Reservations</h2>
+
+            <p> Reservations are available for brunch on weekends and dinner on weekdays. To ensure we have space to accommodate you, please place your reservation below. We look forward to seeing you!</p>
+            
+            
+        </div>
+    </div>
+    
+
+        <form id="reservation-form" class="section">
+            <p><input class="input" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="input" type="email"placeholder="Email" required name="Email"></p> 
+
+            <!-- Dinner or brunch selection -->
+            <p>
+                <label for="meal">Bunch or Dinner?:</label>
+                <select class="input" id="meal" name="meal" required>
+                    <option value="">Select</option>
+                    <option value="brunch">Brunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </p>
+
+            <!-- time slots -->
+            <p>
+                <label for="time-slot">Select a time slot:</label>
+                <select class="input" id="time-slot" name="time-slot" required>
+                    <option value="">Select a meal first</option>
+                </select>
+            </p>
+
+            <!-- Guest limit (1 - 6) -->
+            <p><input class="input" type="number" placeholder="Number of guests" required name="People" min="1" max="6"></p>
+
+            <p><input class="input" type="text" placeholder="Special requests or accommodations" name="Message"></p>
+            <p><button class="interactive-button" type="submit">Submit</button></p>
+        </form>
+
+        <p id="confirmation-message" style="color: green; display: none;">Thank you for making a reservation at Green Gaia! We're excited to welcome you. Keep an eye on your email for your reservation confirmation </p>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("reservation-form");
+            const mealSelect = document.getElementById("meal");
+            const timeSlotSelect = document.getElementById("time-slot");
+
+            const timeSlots = {
+                brunch: ["9:00 AM", "10:30 AM", "12:00 PM"],
+                dinner: ["5:00 PM", "6:30 PM", "8:00 PM"]
+            };
+
+            // update time slots depending on meal selection
+            mealSelect.addEventListener("change", function() {
+                timeSlotSelect.innerHTML = ""; 
+                if (this.value) {
+                    timeSlots[this.value].forEach(time => {
+                        let option = document.createElement("option");
+                        option.value = time;
+                        option.textContent = time;
+                        timeSlotSelect.appendChild(option);
+                    });
+                } else {
+                    let defaultOption = document.createElement("option");
+                    defaultOption.textContent = "Select a meal first";
+                    timeSlotSelect.appendChild(defaultOption);
+                }
+            });
+
+            // form submission
+            if (form) {
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    document.getElementById("confirmation-message").style.display = "block";
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+
+<footer>
+    <p>Green Gaia | 9876 Savory Street, Florence, KY 41042</p>
+    <p>&copy; 2025 Green Gaia. All rights reserved.</p>
+</footer>
+
+</html>

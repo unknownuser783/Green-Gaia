@@ -1,0 +1,341 @@
+/* General Reset */
+* { 
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* logo css*/
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4A6C3C;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: white;
+    max-width: 200px; /* Adjust as needed */
+    word-wrap: break-word;
+}
+/* logo css*/
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    text-align: center;
+}
+
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hover Effect */
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Center logo */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 30px 0;
+}
+
+/*mobile friendly*/
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        width: 120px; /* mobile enhancement */
+    }
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section {
+        padding: 40px 20px;
+    }
+
+    .tabcontent {
+        max-width: 95%;
+    }
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4A6C3C; 
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+
+header nav ul li a:hover {
+    color: #D1E8D1; /* changed color on hover*/
+}
+
+/* Motto Section */
+.motto-section {
+    background-color: #F1F1F1; 
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.motto-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4A6C3C;
+    margin-bottom: 20px;
+}
+
+.motto-section .interactive-button {
+    background-color: #4A6C3C;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.motto-section .interactive-button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+/* Style different sections/elements */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4A6C3C;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Style Working Buttons */
+.interactive-button {
+    background-color: #4A6C3C;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.interactive-button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+/* Style of Footer */
+footer {
+    background-color: #4A6C3C;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* MENU TABS */
+
+/* Style the tab container */
+.menutabs {
+    display: flex;
+    justify-content: center; /* Center the tab buttons */
+    margin: 30px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style the tab buttons */
+.menutabs button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin: 0 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.3s ease;
+}
+
+.menutabs button:hover {
+    background-color: #ddd;
+}
+
+.menutabs button.active {
+    background-color: #4A6C3C;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    margin: 0 auto;
+    max-width: 80%; /* Limit width and center the content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.tabcontent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.tabcontent ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: 10px; /* Add spacing between elements */
+}
+
+.input {
+    display: block;  /* Ensures it's treated as a block element */
+    margin: auto;    /* Centers it horizontally */
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input[name="Message"] {
+    height: 120px; 
+    resize: vertical; 
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.type {color:#4A6C3C;font-size: 25px;}
